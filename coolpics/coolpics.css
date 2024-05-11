@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: Mooli, san-serif;
+    }
+body{
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding-bottom: 20px;
+}
+header h1{
+    font-size: 3em;
+    font-family: Mooli, Arial, Helvetica, sans-serif;
+}
+header h2{
+    font-size: 2em;
+}
+.header-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1.3em;
+}
+a{
+    color: white;
+}
+main{
+    color: black;
+    text-align: center;
+}
+.center-my-stuff{
+    display: flex;
+    justify-content: center;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+figure{
+    box-shadow: 2px 2px 10px;
+    height: 300px;
+    width: 300px;
+}
+img{
+    padding-top: 21px;
+    max-width: 100%;
+}
+footer{
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+@media (min-width: 700px){
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    .header-grid{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+    }
