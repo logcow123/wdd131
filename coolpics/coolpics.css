@@ -23,7 +23,7 @@ header h1{
     font-size: 3em;
     font-family: Mooli, Arial, Helvetica, sans-serif;
 }
-header h2{
+header button{
     font-size: 2em;
 }
 .header-grid{
@@ -61,8 +61,38 @@ footer{
     background-color: var(--primary-color);
     padding: 10px;
 }
+.hide{
+    display: none;
+}
+.viewer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-rows: 50px auto;
+    justify-items: center;
+}
+.viewer img{
+    max-height: 65%;
+    margin: 2%;
+    grid-row: 2;
+}
+.close-viewer{
+    justify-self: end; /* Align the close button to the right */
+    margin: 1rem; /* Add some spacing */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    grid-row: 1;
+}
 
-@media (min-width: 700px){
+@media (min-width: 1000px){
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
       }
@@ -70,5 +100,13 @@ footer{
         display: flex;
         justify-content: center;
         gap: 40px;
+    }
+    header button{
+        display: none;
+        font-size: 2em;
+    }
+    .viewer{
+        padding: 3% 3%;
+        margin: 2% 5%;
     }
     }

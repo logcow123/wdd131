@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Pics 📷</title>
     <link rel="stylesheet" href="./coolpics.css">
-    <script src="./coolpics.js"></script>
+    <script src="./coolpics.js" defer></script>
 </head>
 <body>
+    <div class="viewer">
+        <button class="close-viewer">X</button>
+        <img src="norris-sm.jpeg" alt="alt description">
+      </div>
     <header>
         <h1>Cool Pics 📷</h1>
-        <h2>Menu</h2>
-        <div class="header-grid">
+        <button id="menu_button">Menu</button>
+        <div class="header-grid hide" id="menu">
             <a href="./index.html">Home</a>
             <a href="">People</a>
             <a href="">Places</a>
