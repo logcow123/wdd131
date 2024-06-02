@@ -39,28 +39,37 @@ nav a {
 main {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
     gap: 1rem;
     padding: 1rem;
 }
 article {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 150px auto;
     gap: 0.5rem;
     margin-bottom: 2rem;
-    
+    grid-column: 1;
 }
 .book-pic{
     padding-left: 5%;
     text-align: left;
     border-left: 1px solid #AF1B3F;;
 }
-.book-pic img{
-    padding-left: 10%;
+.image-center{
+    text-align: center;
 }
 .book-info{
     text-align: right;
 }
+.date-of-book{
+    font-size: 1.2em;
+}
+.genre{
+    font-size: 1.2em;
+}
 
 .filter{
     border: 1px solid #AF1B3F;
+    grid-column: 2;
+    grid-row: 1;
 }
