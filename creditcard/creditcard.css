@@ -1,0 +1,84 @@
+form{
+    display: grid;
+    grid-template-columns: 100px 250px 100px;
+    grid-template-rows: 30px 200px 30px 60px;
+    gap: 10px;
+}
+
+#card-front{
+    background-color: lightgray;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 3px 3px 8px gray;
+}
+#card-front-grid{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 20px;
+}
+#card-back{
+    background-color: lightgray;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    border-radius: 5px;
+    z-index: 0;
+}
+button{
+    text-align: center;
+    grid-row-start: 4;
+    grid-column-start: 3;
+}
+.card-holder input{
+    max-width: 75px;
+}
+.card-form input{ 
+    max-width: 160px;
+}
+.expiration input{
+    max-width: 25px;
+}
+.card-form, .card-holder, .expiration{
+    max-height: 50px;
+}
+.card-form{
+    grid-row-start: 2;
+}
+.card-holder{
+    grid-row-start: 3;
+}
+.expiration{
+    grid-row-start: 3;
+}
+#card-back-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 40px 190px;
+    margin: 20px;
+}
+.cvv{
+    text-align: right;
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+.cvv input{
+    max-width: 25px;
+    margin-right: 30px;
+}
+.cvv p{
+    margin-top: 100px;
+    margin-right: 10px;
+}
+span{
+    background-color: black;
+    width: 340px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
