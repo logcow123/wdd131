@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap');
+
+
+main{
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.web-logo{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 200px 120px 120px;
+}
+.logo{
+    grid-column: 1 2;
+}
+.name{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-family: Playwrite IS;
+    font-size: 2.3em;
+}
+#search-bar{
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    padding-top: 50px;
+    height: 50px;
+    margin: 15px;
+}
+#search-bar input{
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+    border-width: 1px;
+}
+.search-button{
+    border-radius: 0px 10px 10px 0px;
+    border-width: 1px;
+}
+
+.recipe{
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.tags span{
+    border: 1px solid;
+    padding: 10px 20px;
+    font-size: 1.4em;
+}
+.tags{
+    margin: 20px 0px;
+}
+
+.recipe img{
+    padding-bottom: 15px;
+}
+.recipe-link{
+    font-size: 3em;
+    text-decoration: none;
+    font-family: Playwrite IS;
+    color: #86b9d9;
+}
+.large-screen-description{
+    display: none;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    height: 75px;
+}
+.social a{
+    margin: 5px;
+}
+
+.freepik{
+    text-align: center;
+}
+
+@media only screen and (min-width: 960px){
+    .tags a{
+        color: red;
+    }
+    .large-screen-description{
+        display: block;
+        font-size: 1.4em;
+    }
+    .recipe{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+}
