@@ -14,8 +14,8 @@
     <meta name="description" content="This website will teach you how to make all kinds of food">
     <title>Recipe Book</title>
     <link rel="stylesheet" href="./recipes.css">
-    <script src="./main.js" defer></script>
-    <script src="./recipes.mjs" defer></script>
+    <script src="./main.js" type="module" defer></script>
+    <script src="./recipes.mjs" type="module" defer></script>
 </head>
 <body>
     <header>
@@ -24,13 +24,13 @@
             <h1 class="name">Recipe Book</h1>
         </div>
         <div id="search-bar">
-            <input type="text" placeholder="Find a recipe">
-            <button class="search-button">
+            <input type="text" placeholder="Find a recipe" id="user-input">
+            <button class="search-button" id="user-search">
                 <img src="./images/search.svg" alt="search button">
             </button>
         </div>
     </header>
-    <main>
+    <main id="the-main-page">
         <div class="recipe">
             <img src="./images/apple-crisp.jpg" alt="apple crisp image">
             <div class="description">
