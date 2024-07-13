@@ -1,0 +1,46 @@
+
+:root{
+  --primary-color: #1F7A8C;
+  --secondary-color: #F4D35E;
+  --accent1-color: #B4C5E4;
+  --accent2-color: #022B3A;
+}
+body{
+    margin: 0 auto;
+}
+header{
+    background-color: var(--secondary-color);
+    display: flex;
+    max-height: 100px;
+}
+nav{
+    width: 87%;
+    padding-left: 0;
+  line-height: 75px;
+  text-align: center;
+  font-size: 1.6em;
+  justify-content: center;
+}
+nav a:hover {
+    color: var(--accent1-color);
+    background-color: var(--accent2-color);
+  }
+.logo{
+    max-height: 75px;   
+}
+nav a{
+padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 20px;
+}
+main{
+    text-align: center;
+}
+.intro-text{
+    width: 80%;
+    margin: auto;
+    font-size: 1.7em;
+}
+
+
