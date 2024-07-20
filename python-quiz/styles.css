@@ -1,12 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
 
 :root{
   --primary-color: #1F7A8C;
   --secondary-color: #F4D35E;
   --accent1-color: #B4C5E4;
   --accent2-color: #022B3A;
+
+  --heading-font: "Ubuntu";
+  --paragraph-font: Mukta, Helvetica, sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+p{
+  font-family: var(--paragraph-font);
+}
+
 body{
     margin: 0 auto;
+
 }
 header{
     background-color: var(--secondary-color);
@@ -41,6 +64,59 @@ main{
     width: 80%;
     margin: auto;
     font-size: 1.7em;
+    padding-bottom: 100px;
 }
-
-
+main{
+  padding-bottom: 13%;
+}
+main a{
+  border-radius: 5px;
+  background-color: #F4D35E;
+  padding: 1em;
+  min-width: 400px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2em;
+}
+main a:hover {
+  color: var(--accent1-color);
+  background-color: var(--accent2-color);
+}
+footer{
+  background-color: #F4D35E;
+  padding: 20px;
+}
+.social a img{
+  max-width: 50px;
+  min-width: 50px
+}
+.social a{
+  padding: 5px;
+}
+.quiz-container{
+  background-color: #B4C5E4;
+  margin: auto;
+  margin-top: 5%;
+  max-width: 80%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border-radius: 10px;
+}
+.btn-grid{
+  padding-left: 20%;
+  display: grid;
+  grid-template-columns: 35% 35%;
+  grid-template-rows: 75px 75px;
+  column-gap: 3.33%;
+  row-gap: 7%;
+  margin: auto;
+}
+.btn{
+  background-color: #1F7A8C;
+  color: white;
+  border-radius: 5px;
+  font-size: 1em;
+}
+.btn :hover{
+  background-color: #022B3A;
+}

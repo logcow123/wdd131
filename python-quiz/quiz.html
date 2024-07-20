@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js" defer></script>
+    <script src="./questions.js" defer></script>
+    <title>Python Quiz</title>
 </head>
 <body>
-    
+    <header>
+        <img class="logo" src="./images/python-learning-logo.png" alt="Python Quiz Logo">
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./quiz.html">Quiz</a>
+        </nav>
+    </header>
+    <main>
+        <div class="quiz-container">
+            <h1 class="quiz-title">Python Quiz</h1>
+            <div id="question-container">
+                <h2 id="question-text" class="question-text">temp</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    <!-- Answer buttons will be inserted here by JavaScript -->
+                </div>
+            </div>
+            <div id="controls">
+                <div id="progress-bar">
+                    <div id="progress"></div>
+                </div>
+                <p id="progress-text"></p>
+            </div>
+            <div id="result" class="hide"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/facebook-icon.svg" alt="facebook icon"></a>
+        </div>
+    </footer>
 </body>
 </html>
